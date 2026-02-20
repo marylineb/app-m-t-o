@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+  <h1>Application MÉTÉO</h1>
+</header>
+
+<main>
+  <section class="search">
+    <h2>Rechercher une ville</h2>
+    <input type="text" placeholder="Rechercher une ville..." />
+    <ul class="results"></ul>
+  </section>
+
+  <section class="weather">
+    <h2>Ville sélectionnée</h2>
+    <div class="weather-card"></div>
+  </section>
+
+  <section class="favorites">
+    <h2>Favoris</h2>
+    <ul></ul>
+  </section>
+
+<section id="list">
+  <h2>Prévisions sur 7 jours</h2>
+  <ul id="weather-list">
+    <li class="weather-card">
+      <h3 class="date"></h3>
+
+      <div class="conditions">
+        <div class="matin">
+          <i class="fa-solid"></i>
+          <span>Matin</span>
+        </div>
+
+        <div class="soir">
+          <i class="fa-solid"></i>
+          <span>Soir</span>
+        </div>
+      </div>
+
+      <div class="temps">
+        <p class="max"></p>
+        <p class="min"></p>
+        <p class="humidity"></p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+</main>
+</body>
+<script src="index.js"></script>
+</html>
